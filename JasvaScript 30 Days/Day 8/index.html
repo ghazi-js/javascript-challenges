@@ -1,0 +1,30 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Draw with canvas</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+<div class="controls">
+    <div class="drop-down">
+        <span id="line-width-dropdown" class="placeholder">Line Width</span>
+        <ul class="menu">
+            <li data-width="10" data-shuffle="false">10</li>
+            <li data-width="25" data-shuffle="false">25</li>
+            <li data-width="50" data-shuffle="false">50</li>
+            <li data-width="75" data-shuffle="false">75</li>
+            <li data-width="100" data-shuffle="false">100</li>
+            <li data-width="25" data-shuffle="true" class="active">shuffle</li>
+        </ul>
+    </div>
+    <input type="color" id="colorPicker" value="#BADA55">
+</div>
+<canvas id="canvas"></canvas>
+
+<script src="./js/custom.js"></script>
+</body>
+</html>

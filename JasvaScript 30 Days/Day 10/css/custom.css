@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: #f9bb00;
+}
+
+.inbox {
+    width: 350px;
+    margin: 5% auto;
+    background: #fcfcfb;
+    border-radius: 5px;
+    box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.1);
+}
+
+.item {
+    border-bottom: 1px solid #CCC;
+    display: flex;
+}
+
+p {
+    margin: 0;
+    padding: 15px 20px;
+    border-left: 1px solid #CCC;
+    line-height: 25px;
+    flex: 1;
+}
+
+input {
+    margin: auto 15px;
+}
+
+input:checked + p {
+    text-decoration: line-through;
+    background: #EEE;
+}

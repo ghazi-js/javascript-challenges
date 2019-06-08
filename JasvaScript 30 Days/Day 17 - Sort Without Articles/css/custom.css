@@ -1,0 +1,32 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background: url(../images/bg.jpg);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#bands {
+    list-style: inside square;
+    font-size: 20px;
+    background: white;
+    width: 500px;
+    margin: 5% auto;
+    padding: 0;
+    box-shadow: 0 0 0 20px rgba(0, 0, 0, 0.05);
+}
+#bands li {
+    border-bottom: 1px solid #efefef;
+    padding: 20px;
+}
+#bands li:last-child {
+    border-bottom: 0;
+}

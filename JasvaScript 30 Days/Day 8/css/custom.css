@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.controls {
+    padding: 15px;
+    border-bottom: 2px dashed #ccc;
+}
+
+.controls:after {
+    clear: both;
+}
+
+.drop-down {
+    width: 150px;
+    position: relative;
+    display: inline-block;
+    float: left;
+}
+
+.placeholder {
+    display: inline-block;
+    position: relative;
+    padding: 10px 40px 10px 10px;
+    border: 1px solid #CCC;
+    box-shadow: 0 0 2px #888;
+    cursor: pointer;
+}
+
+.placeholder:after {
+    content: '';
+    position: absolute;
+    right: 10px;
+    top: 0;
+    bottom: 0;
+    height: 2px;
+    margin: auto;
+    border-top: 8px solid #CCC;
+    border-right: 8px solid transparent;
+    border-left: 8px solid transparent;
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #CCC;
+    box-shadow: 1px 1px 3px #CCC;
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+    width: 100%;
+    display: none;
+    background-color: #FFF;
+}
+
+.menu li {
+    padding: 5px 15px;
+    font-size: 13px;
+    cursor: pointer;
+    transition: padding .2s ease-in-out;
+}
+
+.menu li:hover {
+    padding-left: 25px;
+}
+
+.menu.open {
+    display: block;
+}
+
+.menu li.active {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+input[type=color] {
+    display: inline-block;
+    width: 140px;
+    height: 42px;
+}

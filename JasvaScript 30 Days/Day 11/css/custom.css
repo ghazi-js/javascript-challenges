@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background: #7A419B;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #7c1599 0%, #921099 48%, #7e4ae8 100%);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.player {
+    width: 640px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: none;
+}
+
+/* This css is only applied when fullscreen is active. */
+.player:fullscreen {
+    max-width: none;
+    width: 100%;
+}
+
+.player:-webkit-full-screen {
+    max-width: none;
+    width: 100%;
+}
+
+.new-controls {
+    transform: translateY(45px);
+    transition: transform 0.5s ease-in-out;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    z-index: 9999999999;
+}
+
+video:hover + .new-controls, .new-controls:hover {
+    transform: translateY(0);
+}
+
+.progress {
+    background: rgba(0, 0, 0, 0.6);
+    cursor: pointer;
+}
+
+.progress-fill {
+    width: 0;
+    height: 15px;
+    background: #fcbb00;
+}
+
+.controls {
+    display: flex;
+    padding: 10px 0;
+}
+
+.player-btn {
+    padding: 0 10px;
+    cursor: pointer;
+    color: #FFF;
+}
+
+.expand {
+    transform: rotate(45deg) scale(1.2) translate(-3px);
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    flex-grow: 1;
+    margin: 0 10px;
+    background: transparent;
+}
+
+input[type=range]:focus {
+    outline: none;
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    height: 10px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 2px;
+}
+
+input[type=range]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: #fcbb00;
+    height: 17px;
+    width: 17px;
+    border-radius: 100%;
+    position: relative;
+    bottom: 4px;
+    cursor: pointer;
+}

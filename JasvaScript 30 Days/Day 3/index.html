@@ -1,0 +1,29 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Day 3</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200" rel="stylesheet">
+    <link rel="stylesheet" href="./css/custom.css">
+</head>
+<body>
+<div>
+    <label for="spacing" class="h2">Spacing: </label>
+    <input type="range" class="filter" id="spacing" min="0" max="50" step="1" value="3" data-size="px" data-filter="spacing" />
+
+    <label for="blur" class="h2">Blur: </label>
+    <input type="range" class="filter" id="blur" min="0" max="10" step="0.25" value="1" data-size="px" data-filter="blur" />
+
+    <label for="color" class="h2">Base Color: </label>
+    <input type="color" class="filter" id="color" value="#ff8000" data-size="" data-filter="base-color" />
+
+    <div class="img-container">
+        <img src="./images/city.png" alt="paris eiffel tower" id="img">
+    </div>
+</div>
+
+<script src="./js/custom.js"></script>
+</body>
+</html>
